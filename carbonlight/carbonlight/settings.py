@@ -7,8 +7,6 @@ import sys
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-import django.core.management.commands.runserver as runserver
-runserver.DEFAULT_PORT="8080"
 
 
 # Quick-start development settings - unsuitable for production
@@ -86,7 +84,7 @@ DATABASES = {
         'HOST': os.environ.get('DATABASE_HOST'),
         'PORT': os.environ.get('DATABASE_PORT'),
         'OPTIONS': {
-            'sslmode': 'require',    
+                
         }
     }
 }
